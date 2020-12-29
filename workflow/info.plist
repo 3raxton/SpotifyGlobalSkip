@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.braxtonhuff.spotifyglobalskip</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>55B7DDF0-6DFE-420F-9E72-641B1D572A93</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BE0417F3-8234-49FE-9D29-7D5F31DFDF18</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E09F996B-3645-4F7F-AF4C-01BAFA29C7AA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>98EEC083-D51C-452B-88EB-1FDAE0D023F1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Braxton Huff</string>
+	<key>description</key>
+	<string>Skip and replay songs on Spotify using global keyboard shortcuts</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Spotify Global Skip</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+tell application "Spotify"
+    next track
+end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>BE0417F3-8234-49FE-9D29-7D5F31DFDF18</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>124</integer>
+				<key>hotmod</key>
+				<integer>11796480</integer>
+				<key>hotstring</key>
+				<string>→</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>55B7DDF0-6DFE-420F-9E72-641B1D572A93</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+tell application "Spotify"
+    previous track
+end tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>98EEC083-D51C-452B-88EB-1FDAE0D023F1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>123</integer>
+				<key>hotmod</key>
+				<integer>11796480</integer>
+				<key>hotstring</key>
+				<string>←</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>E09F996B-3645-4F7F-AF4C-01BAFA29C7AA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>I was tired of not being able to skip with a keyboard shortcut if Spotify wasn't focused, so I created an Alfred workflow to let you do exactly that. 
+
+I recommend using the keyboard shortcut `^ + ⌘ + →/←` for skipping forward and backward as it is already set in Spotify and is most likely not a shortcut used by other apps. 
+
+If you enjoy this workflow or rely on it to enhance your Spotify experience, please consider donating. I'm a college student creating and working on open source projects such as this one for free to enhance your experience on your Mac, and I hope you enjoy it. 
+
+If you have any questions, open an issue on GitHub (https://github.com/3raxton/SpotifyGlobalSkip). I hope this workflow treats you well!</string>
+	<key>uidata</key>
+	<dict>
+		<key>55B7DDF0-6DFE-420F-9E72-641B1D572A93</key>
+		<dict>
+			<key>xpos</key>
+			<integer>135</integer>
+			<key>ypos</key>
+			<integer>95</integer>
+		</dict>
+		<key>98EEC083-D51C-452B-88EB-1FDAE0D023F1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>325</integer>
+			<key>ypos</key>
+			<integer>225</integer>
+		</dict>
+		<key>BE0417F3-8234-49FE-9D29-7D5F31DFDF18</key>
+		<dict>
+			<key>xpos</key>
+			<integer>320</integer>
+			<key>ypos</key>
+			<integer>95</integer>
+		</dict>
+		<key>E09F996B-3645-4F7F-AF4C-01BAFA29C7AA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>135</integer>
+			<key>ypos</key>
+			<integer>225</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://www.braxtonhuff.com</string>
+</dict>
+</plist>
